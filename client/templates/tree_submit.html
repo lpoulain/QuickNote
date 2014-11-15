@@ -1,0 +1,30 @@
+<template name="treeSubmit">
+
+  <table border="0"><tr>
+
+      {{> treeToEdit}}
+
+      <td valign="top">
+
+    <form class="main form">
+        <div class="form-group">
+            <label class="control-label" for="name">Name</label>
+            <div class="controls">
+                <input name="name" id="name" type="text" value="{{name}}" placeholder="Name" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="path">Parent</label>
+            <select name="path" id="path" class="form-control">
+	        <option value="">Root</option>
+                {{#each tree}}
+                    <option value="{{path}}|{{name}}">{{prettyPath}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary submit"/>
+    </form>
+    
+    </td>
+      </tr></table>
+</template>

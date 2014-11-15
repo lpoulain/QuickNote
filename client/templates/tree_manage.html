@@ -1,0 +1,30 @@
+<template name="treeManage">
+  <table border="0"><tr>
+	 {{> treeToEdit}}
+  </tr></table>
+</template>
+
+<template name="treeToEdit">
+  <td valign="top" width="180px">
+    <ul class="tree">
+      {{#each treeroots}}
+      <li>
+        {{> branchEdit}}
+      </li>
+      {{/each}}
+    </ul>
+    <a href="{{pathFor 'treeSubmit'}}">New branch</a>
+  </td>
+  <td>&nbsp;&nbsp;</td>
+</template>
+
+<template name="branchEdit">
+    <label for="cb-{{_id}}"><a href="/tree/{{_id}}/edit">{{name}}</a></label>
+    <ul>
+        {{#each treenodes}}
+        <li>
+            {{> branchEdit}}
+        </li>
+        {{/each}}
+    </ul>
+</template>

@@ -1,0 +1,45 @@
+<template name="noteSubmit">
+    <form class="main form">
+        <div class="form-group">
+            <label class="control-label" for="name">Name</label>
+            <div class="controls">
+                <input name="name" id="name" type="text" value="" placeholder="Name" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="section">Section</label>
+            <select name="section" id="section" class="form-control">
+                {{#each tree}}
+                    <option value="{{_id}}" selected={{isSection ../section}}>{{prettyPath}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="content">Content</label>
+            <table border="0" width="100%">
+                <tr>
+                    <td width="49%">
+                        <textarea name="content" id="content" class="form-control" onkeyup="update();" onchange="update();">{{content}}</textarea>
+                    </td>
+                    <td width="2%">&nbsp;</td>
+                    <td width="49%">
+                        {{#markdown}}{{content_m}}{{/markdown}}
+                    </td>
+                </tr>
+            </table>
+            <div class="controls">
+            </div>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary"/>
+    </form>
+    
+    <script language="JavaScript">
+        function update() {
+            Session.set('content_new', $('#content')[0].value);
+            console.log('Updated');
+        }
+        update();
+        $('#content').autosize();
+    </script>
+    
+</template>

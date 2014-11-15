@@ -1,0 +1,12 @@
+<template name="notesList">
+    <table border="0"><tr>
+        {{> tree}}
+        <td valign="top">
+            <div class="notes">
+                {{#each notes}}
+                    {{> noteItem}}
+                {{/each}}
+            </div>
+        </td>
+        </tr></table>
+</template>
