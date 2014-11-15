@@ -1,7 +1,7 @@
 QuickNote
 =========
 
-QuickNote is a note-taking website implemented in Meteor.
+QuickNote is a note-taking website implemented in [Meteor](https://www.meteor.com).
 
 QuickNote main features are to:
 
@@ -11,7 +11,7 @@ QuickNote main features are to:
 In order to work, this project requires the following [Meteor packages](https://atmospherejs.com/):
 
 - accounts-password (Password support for accounts)
-- copleykj:jquery-autosize (Automatically adjust textarea height)
+- copleykj:jquery-autosize (Automatically adjust textarea height based on content)
 - ian:accounts-ui-bootstrap-3  (Bootstrap-styled accounts-ui)
 - iron:router (Routing specifically designed for Meteor)
 - markdown (Markdown-to-HTML processor)
