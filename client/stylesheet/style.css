@@ -170,3 +170,7 @@ body {
 .tree li {
     list-style: none;
 }
+
+.note_title {
+    margin-top: 0px;
+}
