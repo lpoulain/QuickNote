@@ -8,7 +8,7 @@ QuickNote main features are to:
 - Organize the notes in a tree structure
 - Use the [Markdown](http://daringfireball.net/linked/2014/01/08/markdown-extension) language to enter rich text
 
-In order to work, this project requires the following [Meteor packages](https://atmospherejs.com/):
+I'm not sure if anybody else would be interested in such a project, but you are welcome to give it a spin, especially if you are interested in learning Meteor. In order to work, this project requires the following [Meteor packages](https://atmospherejs.com/):
 
 - accounts-password (Password support for accounts)
 - copleykj:jquery-autosize (Automatically adjust textarea height based on content)
