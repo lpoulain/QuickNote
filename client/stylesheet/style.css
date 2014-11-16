@@ -80,7 +80,7 @@ body {
     display: inline-block;
     color: #aaaaaa;
 }
-.note .note-content p { margin: 0; }
+
 .note .discuss { display: block; float: right; margin-top: 7px; }
 
 .comments { list-style-type: none; margin: 0; }
