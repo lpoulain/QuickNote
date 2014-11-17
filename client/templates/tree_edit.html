@@ -14,11 +14,11 @@
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label" for="path">Parent</label>
-            <select name="path" id="path" class="form-control">
+            <label class="control-label" for="parent">Parent</label>
+            <select name="parent" id="parent" class="form-control">
 	        <option value="">Root</option>
                 {{#each tree}}
-                    <option value="{{path}}|{{name}}" selected={{isParent ..}}>{{prettyPath}}</option>
+                    <option value="{{id}}" selected={{isParent ..}}>{{label}}</option>
                 {{/each}}
             </select>
         </div>

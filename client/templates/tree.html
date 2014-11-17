@@ -14,7 +14,7 @@
 </template>
 
 <template name="branch">
-    <label for="cb-{{_id}}"><a href="/sections/{{_id}}" style="{{color}}">{{name}}</a> ({{notes}})</label>
+    <label for="cb-{{element._id}}"><a href="/sections/{{element._id}}" style="{{color}}">{{element.name}}</a> ({{notes}})</label>
     <ul>
         {{#each treenodes}}
         <li>

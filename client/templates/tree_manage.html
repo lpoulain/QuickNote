@@ -19,9 +19,9 @@
 </template>
 
 <template name="branchEdit">
-    <label for="cb-{{_id}}"><a href="/tree/{{_id}}/edit">{{name}}</a></label>
+    <label for="cb-{{element._id}}"><a href="/tree/{{element._id}}/edit" style="{{color}}">{{element.name}}</a></label>
     <ul>
-        {{#each treenodes}}
+        {{#each children}}
         <li>
             {{> branchEdit}}
         </li>

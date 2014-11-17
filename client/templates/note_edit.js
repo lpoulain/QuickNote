@@ -1,7 +1,7 @@
 Template.noteEdit.helpers({
     content_m: function() { return Session.get('content_' + this._id); },
-    tree: function() { return Tree.find({}, {sort: {path:1, name:2}}); },
-    isSection: function(arg) { console.log(arg); return (this._id == arg); },
+    tree: getTreeOptions,
+    isSection: function(arg) { return (this.id == arg); },
     prettyPath: function() { return (this.path.replace(/\|/g, ' / ') + ' / ' + this.name).substr(3); }
 });
 

@@ -11,7 +11,7 @@
             <label class="control-label" for="section">Section</label>
             <select name="section" id="section" class="form-control">
                 {{#each tree}}
-                    <option value="{{_id}}" selected={{isSection ../section}}>{{prettyPath}}</option>
+                    <option value="{{id}}" selected={{isSection ../section}}>{{label}}</option>
                 {{/each}}
             </select>
         </div>

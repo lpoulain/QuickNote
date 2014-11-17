@@ -1,6 +1,5 @@
 Template.treeSubmit.helpers({
-    tree: function() { return Tree.find({}, {sort: {path: 1, name: 2}}); },
-    prettyPath: function() { return (this.path.replace(/\|/g, ' / ') + ' / ' + this.name).substr(3); }
+    tree: getTreeOptions
 });
 
 Template.treeSubmit.events({
@@ -9,7 +8,7 @@ Template.treeSubmit.events({
 
         var tree = {
             name: $(e.target).find('[name=name]').val(),
-            path: $(e.target).find('[name=path]').val()
+            parent: $(e.target).find('[name=parent]').val()
         };
 
         Meteor.call('treeInsert', tree, function(error, result) {
@@ -20,8 +19,8 @@ Template.treeSubmit.events({
             // show this result but route anyway
             if (result.branchExists) {
                 alert('This branch already exists');
-		return;
-	    }
+                return;
+            }
             
             Router.go('treeManage');
         });
