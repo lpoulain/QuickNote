@@ -174,3 +174,35 @@ body {
 .note_title {
     margin-top: 0px;
 }
+
+label a, label count-list {
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+label a:hover, .active a {
+    color: red;
+    text-decoration: none;
+}
+
+label:hover .count-list, .active .count-list {
+    color:white;
+    text-decoration: none;
+    background: none repeat scroll 0% 0% #FF0000;
+}
+
+.count-list {
+    color: #428bca;
+    background-color: rgba(0, 0, 255, 0.0980392);
+    border-radius: 1em;
+    font-size: 11.2px;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    border-top-left-radius: 8.6px;
+    border-top-right-radius: 8.6px;
+    border-bottom-left-radius: 8.6px;
+    border-bottom-right-radius: 8.6px;
+    line-height: 1;
+    padding: .3em .5em;
+}

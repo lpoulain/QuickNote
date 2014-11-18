@@ -1,6 +1,5 @@
 <template name="tree">
     {{#if displayTree}}
-    <td valign="top" width="180px">
         <ul class="tree">
             {{#each treeroots}}
             <li>
@@ -8,13 +7,14 @@
             </li>
             {{/each}}
         </ul>
-    </td>
-    <td>&nbsp;&nbsp;</td>
     {{/if}}
 </template>
 
 <template name="branch">
-    <label for="cb-{{element._id}}"><a href="/sections/{{element._id}}" style="{{color}}">{{element.name}}</a> ({{notes}})</label>
+    <label for="cb-{{element._id}}" class="{{color}}">
+        <a href="/sections/{{element._id}}">{{element.name}}</a>
+        <span class="count-list">{{notes}}</span>
+    </label>
     <ul>
         {{#each treenodes}}
         <li>

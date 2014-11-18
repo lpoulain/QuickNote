@@ -1,0 +1,9 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/Laurent/code/meteor/quicknote",
+			"folder_exclude_patterns": [".meteor", "packages"]
+		}
+	]
+}

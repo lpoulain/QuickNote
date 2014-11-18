@@ -53,12 +53,12 @@ Template.branch.helpers({
     color: function() {
         if (section == 'record') {
             if (note.section == this.element._id)
-                return "color: red;";
+                return "active";
             return '';
         }
         
         if (section == this.element._id)
-            return "color: red;";
+            return "active";
         return '';
     }
 });
