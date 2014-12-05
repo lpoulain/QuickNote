@@ -33,8 +33,7 @@ Template.tree.helpers({
     treeroots: getTree,
     
     displayTree: function() {
-        return (Meteor.Device.isPhone() == false ||
-                section == 'all');
+        return true;
     }
 });
 

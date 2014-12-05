@@ -1,0 +1,30 @@
+<template name="search">
+    <script language="JavaScript">
+        function clear() {
+            $("input")[0].value = '';
+            return null;
+        }
+    </script>
+
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+            {{> tree}}
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-8 hidden-xs">
+            <div class="notes">
+                <span class="glyphicon glyphicon-search">
+                {{> esInput index="notes" placeholder="Search..." }}
+                </span>
+                <a href="javascript:clear();"><span class="glyphicon glyphicon-remove"></span></a>
+
+                {{#esEach index="notes"}}
+                    {{> noteItem}}
+                {{/esEach}}
+
+                {{#ifEsHasNoResults index="notes"}}
+                    <div class="no-results">No results found!</div>
+                {{/ifEsHasNoResults}}
+            </div>
+        </div>
+    </div>
+</template>

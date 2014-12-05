@@ -186,23 +186,14 @@ label a:hover, .active a {
     text-decoration: none;
 }
 
-label:hover .count-list, .active .count-list {
+label:hover .count-list, .active .count-list, label:hover .badge, .active .badge {
     color:white;
     text-decoration: none;
     background: none repeat scroll 0% 0% #FF0000;
 }
 
-.count-list {
+.badge {
     color: #428bca;
     background-color: rgba(0, 0, 255, 0.0980392);
-    border-radius: 1em;
-    font-size: 11.2px;
-    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
-    border-top-left-radius: 8.6px;
-    border-top-right-radius: 8.6px;
-    border-bottom-left-radius: 8.6px;
-    border-bottom-right-radius: 8.6px;
-    line-height: 1;
-    padding: .3em .5em;
 }

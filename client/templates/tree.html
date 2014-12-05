@@ -13,7 +13,7 @@
 <template name="branch">
     <label for="cb-{{element._id}}" class="{{color}}">
         <a href="/sections/{{element._id}}">{{element.name}}</a>
-        <span class="count-list">{{notes}}</span>
+        <span class="badge">{{notes}}</span>
     </label>
     <ul>
         {{#each treenodes}}
