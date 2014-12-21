@@ -1,7 +1,11 @@
 
 Template.treeEdit.helpers({
     tree: getTreeOptions,
-    isParent: function(arg) { return (this.id == arg.parent); }
+    isParent: function(arg) { return (this.id == arg.parent); },
+    isCollapse: function() {
+        var val = Tree.findOne(section).collapse
+        return (typeof val != 'undefined' && val == 'on') ? 'checked' : '';
+    }
 });
 
 Template.treeEdit.events({
@@ -13,8 +17,10 @@ Template.treeEdit.events({
 
         var treeProperties = {
             name: $(e.target).find('[name=name]').val(),
-            parent: $(e.target).find('[name=parent]').val()
+            parent: $(e.target).find('[name=parent]').val(),
+            collapse: $('input[name=collapse]:checked').val()
         }
+        if (typeof treeProperties.collapse == 'undefined') treeProperties.collapse = '';
 
         if (treeProperties.parent == this._id) {
             alert('A branch cannot be its own parent');

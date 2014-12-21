@@ -22,6 +22,10 @@
                 {{/each}}
             </select>
         </div>
+        <div class="form-group">
+            <label class="control-label" for="collapse">Collapse</label>
+            <input name="collapse" id="collapse" type="checkbox" class="form-control" {{isCollapse}}/>
+        </div>
         <input type="submit" value="Submit" class="btn btn-primary submit"/>
         <hr/>
         <a class="btn btn-danger delete" href="#">Delete branch</a>
