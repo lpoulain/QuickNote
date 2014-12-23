@@ -34,10 +34,11 @@ Template.branch.helpers({
     },
 
     branch_class: function() {
-        var res = (this.element.collapse == 'on' &&
-                   section != this.element._id)
+        var currSection =  (section == this.element._id ||
+             (section == 'record' && note.section == this.element._id));
+        var res = (this.element.collapse == 'on' && currSection)
                   ? 'collapse' : '';
-        if (section == this.element._id && typeof displayBranch != 'undefined') displayBranch(section);
+        if (currSection && typeof displayBranch != 'undefined') displayBranch(section);
         return res;
     }
 });
