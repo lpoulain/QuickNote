@@ -1,3 +1,5 @@
+hasChildren = {};
+
 function getTreeChildren(childrenToGet, allChildren) {
     var result = [];
     _.each(childrenToGet, function(child) {
@@ -16,13 +18,21 @@ function getTreeChildren(childrenToGet, allChildren) {
 getTree = function getTree() {
     var branches = Tree.find().fetch();
     var children = {};
+    hasChildren = {};
     _.each(branches, function(t) {
         var parentId;
         if (t.parent == '' || t.hasOwnProperty('parent') == false) parentId = 'ROOT';
         else parentId = t.parent;
 
-        if (children.hasOwnProperty(parentId)) children[parentId].push(t);
-        else children[parentId] = [t];
+        if (children.hasOwnProperty(parentId)) {
+            children[parentId].push(t);
+            hasChildren[parentId][t._id] = true;
+        }
+        else {
+            children[parentId] = [t];
+            hasChildren[parentId] = {};
+            hasChildren[parentId][t._id] = true;
+        }
     });
 
     var roots = getTreeChildren(children['ROOT'], children);

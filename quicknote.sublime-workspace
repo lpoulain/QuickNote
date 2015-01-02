@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"fin",
+				"findOne"
+			],
+			[
 				"subB",
 				"subBranches"
 			],
@@ -32,18 +36,18 @@
 	"buffers":
 	[
 		{
-			"file": "lib/router.js",
+			"file": "client/stylesheet/style.css",
 			"settings":
 			{
-				"buffer_size": 1437,
+				"buffer_size": 4290,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "lib/collections/notes.js",
+			"file": "client/templates/tree_edit.html",
 			"settings":
 			{
-				"buffer_size": 1258,
+				"buffer_size": 1248,
 				"line_ending": "Unix"
 			}
 		},
@@ -51,7 +55,48 @@
 			"file": "client/templates/tree_edit.js",
 			"settings":
 			{
-				"buffer_size": 2667,
+				"buffer_size": 1941,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/templates/tree_view.html",
+			"settings":
+			{
+				"buffer_size": 1013,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/templates/tree_view.js",
+			"settings":
+			{
+				"buffer_size": 1371,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/Laurent/code/meteor/data_quicknote/dump.py",
+			"settings":
+			{
+				"buffer_size": 541,
+				"line_ending": "Unix",
+				"name": "from subprocess import check_output"
+			}
+		},
+		{
+			"file": "lib/router.js",
+			"settings":
+			{
+				"buffer_size": 1650,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/templates/tree_manage.js",
+			"settings":
+			{
+				"buffer_size": 1126,
 				"line_ending": "Unix"
 			}
 		}
@@ -80,14 +125,42 @@
 	},
 	"file_history":
 	[
-		"/Users/Laurent/code/meteor/quicknote/quicknote.sublime-project",
+		"/Users/Laurent/code/Coursera/Cryptography/week7/test.py",
 		"/Users/Laurent/code/meteor/quicknote/lib/collections/tree.js",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/tree_view.js",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/notes_list.html",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/notes_list.js",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/tree.html",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/tree.js",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/search.html",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/search.js",
+		"/Users/Laurent/code/meteor/quicknote/lib/router.js",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/header.html",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/note_page.html",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/note_page.js",
+		"/Users/Laurent/code/Coursera/Cryptography/week4/m1.txt",
+		"/Users/Laurent/code/Coursera/Cryptography/week4/m0.txt",
+		"/Users/Laurent/code/Coursera/Cryptography/week4/sample.py",
+		"/Users/Laurent/code/Coursera/Cryptography/week4/oracle.py",
+		"/Users/Laurent/code/Coursera/Cryptography/week4/decrypt.py",
+		"/Users/Laurent/code/Coursera/Cryptography/week4/msg.txt",
+		"/Users/Laurent/code/meteor/quicknote/lib/collections/notes.js",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/tree_submit.js",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/tree_submit.html",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/note_submit.html",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/note_submit.js",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/note_edit.html",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/note_edit.js",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/tree_edit.js",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/tree_edit.html",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/tree_manage.js",
+		"/Users/Laurent/code/meteor/quicknote/client/templates/tree_manage.html",
+		"/Users/Laurent/code/meteor/quicknote/quicknote.sublime-project",
 		"/Users/Laurent/code/meteor/quicknote/package.js",
 		"/Users/Laurent/code/meteor/quicknote/client/stylesheet/style.css",
 		"/Users/Laurent/code/meteor/quicknote/client/templates/note_item.html",
 		"/Users/Laurent/code/meteor/quicknote/README.md",
-		"/Users/Laurent/code/meteor/quicknote/mobile-config.js",
-		"/Users/Laurent/code/meteor/quicknote/client/templates/tree_manage.html"
+		"/Users/Laurent/code/meteor/quicknote/mobile-config.js"
 	],
 	"find":
 	{
@@ -95,7 +168,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"/Users/Laurent/code/meteor/quicknote",
@@ -112,6 +185,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"notes_list",
+			"tree.",
+			"device",
+			"container",
+			"path",
+			"'name', 'section', 'content'",
+			"section",
 			"split",
 			"$regex",
 			"ownsDocument",
@@ -135,22 +215,79 @@
 	"groups":
 	[
 		{
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "lib/router.js",
+					"file": "client/stylesheet/style.css",
 					"settings":
 					{
-						"buffer_size": 1437,
+						"buffer_size": 4290,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								4186,
+								4186
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "client/templates/tree_edit.html",
+					"settings":
+					{
+						"buffer_size": 1248,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1012,
+								1012
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/templates/tree_edit.js",
+					"settings":
+					{
+						"buffer_size": 1941,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								750,
+								750
 							]
 						],
 						"settings":
@@ -166,19 +303,47 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "lib/collections/notes.js",
+					"buffer": 3,
+					"file": "client/templates/tree_view.html",
 					"settings":
 					{
-						"buffer_size": 1258,
+						"buffer_size": 1013,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								173,
-								173
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "client/templates/tree_view.js",
+					"settings":
+					{
+						"buffer_size": 1371,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1271,
+								1271
 							]
 						],
 						"settings":
@@ -188,25 +353,80 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 19.0,
+						"translation.y": 34.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "client/templates/tree_edit.js",
+					"buffer": 5,
+					"file": "/Users/Laurent/code/meteor/data_quicknote/dump.py",
 					"settings":
 					{
-						"buffer_size": 2667,
+						"buffer_size": 541,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								558,
-								558
+								350,
+								350
+							]
+						],
+						"settings":
+						{
+							"auto_name": "from subprocess import check_output",
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "lib/router.js",
+					"settings":
+					{
+						"buffer_size": 1650,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								668,
+								668
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "client/templates/tree_manage.js",
+					"settings":
+					{
+						"buffer_size": 1126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								462,
+								462
 							]
 						],
 						"settings":
@@ -230,7 +450,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{

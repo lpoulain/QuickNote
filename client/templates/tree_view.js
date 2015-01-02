@@ -34,12 +34,19 @@ Template.branch.helpers({
     },
 
     branch_class: function() {
-        var currSection =  (section == this.element._id ||
-             (section == 'record' && note.section == this.element._id));
-        var res = (this.element.collapse == 'on' && currSection)
-                  ? 'collapse' : '';
-        if (currSection && typeof displayBranch != 'undefined') displayBranch(section);
-        return res;
+        var result;
+        var sectionSelected = section;
+        if (sectionSelected == 'record') sectionSelected = note.section;
+
+        var children = hasChildren[this.element._id];
+        var expand;
+        if (typeof children == 'undefined') expand = false;
+        else expand = sectionSelected in children;
+
+        var result = (this.element.collapse == 'on' && !expand && this.element._id != sectionSelected)
+                    ? 'collapse' : '';
+
+        return result;
     }
 });
 
